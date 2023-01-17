@@ -4,7 +4,7 @@ const sidebarHover = ref(true);
 </script>
 
 <template>
-  <main class="h-full text-center bg-dark-700">
+  <main class=" text-center bg-dark-700">
     <div class="container">
       <div overflow-hidden bg-dark-400 class="sidebar">
         <div  ml-2 flex flex-col justify-start>
@@ -82,7 +82,9 @@ const sidebarHover = ref(true);
 } */
 /* flexbox */
 .container {
-  height: 100vh;
+  min-height: 100vh;
+  max-height: none;
+  height: auto;
   max-width: none;
   display: flex;
 }
