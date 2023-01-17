@@ -26,7 +26,14 @@ html, body , #__nuxt{
   padding: 0;
   font-family: 'Roboto Mono', monospace;
 }
-
+body {
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
 html.dark {
   background: #222;
   color: white;
